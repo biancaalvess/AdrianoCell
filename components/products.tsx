@@ -41,6 +41,27 @@ export default function Products() {
       name: "Iphone 12",
       image: "/images/iphone12.png",
     },
+    {
+      name: "Capas e Películas",
+      image: "/images/capa.png",
+    },
+    {
+      name: "Carregadores e Cabos - Todos os Aparelhos",
+      image: "/images/carregador.png",
+    },
+    {
+      name: "Fones e Headphones",
+      image: "/images/fone.png",
+    },
+    {
+      name: "Caixas de Som",
+      image: "/images/som.png",
+    },
+    {
+      name: "Garrafa Stanley",
+      image: "/images/garrafa.png",
+    },
+  
   ]
 
   const whatsappAdriano = "https://api.whatsapp.com/send?phone=5575998885439&text="
