@@ -1,8 +1,8 @@
 "use client"
 
 export default function Footer() {
-  const whatsappAdriano = "https://api.whatsapp.com/send?phone=5575998885439&text="
-  const whatsappUPCell = "https://api.whatsapp.com/send?phone=5575997147670"
+  const instagramAdriano = "https://www.instagram.com/adrianoiphones_/"
+  const instagramUPCell = "https://www.instagram.com/up_cell_hp/"
 
   return (
     <footer className="bg-black text-white py-8 px-4 border-t-2 border-[#D4AF37]">
@@ -42,7 +42,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-white">
               <p>
                 <a
-                  href={whatsappAdriano}
+                  href={instagramAdriano}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#D4AF37] hover:underline transition duration-300"
@@ -52,7 +52,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href={whatsappUPCell}
+                  href={instagramUPCell}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#D4AF37] hover:underline transition duration-300"
