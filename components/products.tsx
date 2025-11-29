@@ -14,39 +14,32 @@ import CustomButton from "./custom-button"
 export default function Products() {
   const products = [
     {
-      name: "iPhone 15 Pro Max",
-      description: "Titânio, A17 Pro, 48MP.",
-      image: "/images/01.png",
+      name: "iPhone 11",
+      image: "/images/iphone11.png",
     },
     {
-      name: "Samsung Galaxy S24",
-      description: "Galaxy AI, Alta resolução.",
-      image: "/images/02.png",
+      name: "Samsung Galaxy A07",
+      image: "/images/samsung07.png",
     },
     {
-      name: "Xiaomi 14 Ultra",
-      description: "Lentes Leica, Snap 8 Gen 3.",
-      image: "/images/03.png",
+      name: "Iphone 13",
+      image: "/images/iphone13.png",
     },
     {
-      name: "Motorola Edge 50",
-      description: "Design curvado, 144Hz.",
-      image: "/images/04.png",
+      name: "Note 60",
+      image: "/images/note60.png",
     },
     {
-      name: "Realme 12 Pro+",
-      description: "Zoom Periscópio, Design Premium.",
-      image: "/images/05.png",
+      name: "Iphone 16",
+      image: "/images/iphone16.png",
     },
     {
-      name: "iPad Pro",
-      description: "Chip M4, Tela OLED.",
-      image: "/images/06.png",
+      name: "Redmi 15",
+      image: "/images/redmi15.png",
     },
     {
-      name: "Apple Watch Ultra",
-      description: "Para os aventureiros.",
-      image: "/images/07.png",
+      name: "Iphone 12",
+      image: "/images/iphone12.png",
     },
   ]
 
