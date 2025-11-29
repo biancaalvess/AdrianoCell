@@ -1,59 +1,113 @@
 "use client"
 
+import * as React from "react"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import CustomButton from "./custom-button"
 
 export default function Products() {
   const products = [
     {
-      name: "iPhone",
-      description: "Os melhores iPhones com os preços mais competitivos",
+      name: "iPhone 15 Pro Max",
+      description: "Titânio, A17 Pro, 48MP.",
+      image: "/images/01.png",
     },
     {
-      name: "Samsung",
-      description: "Smartphones Samsung de alta qualidade",
+      name: "Samsung Galaxy S24",
+      description: "Galaxy AI, Alta resolução.",
+      image: "/images/02.png",
     },
     {
-      name: "Xiaomi",
-      description: "Tecnologia Xiaomi com melhor custo-benefício",
+      name: "Xiaomi 14 Ultra",
+      description: "Lentes Leica, Snap 8 Gen 3.",
+      image: "/images/03.png",
     },
     {
-      name: "Realme",
-      description: "Realme - inovação e performance garantidas",
+      name: "Motorola Edge 50",
+      description: "Design curvado, 144Hz.",
+      image: "/images/04.png",
     },
     {
-      name: "Acessórios",
-      description: "Capas, películas, carregadores e muito mais",
+      name: "Realme 12 Pro+",
+      description: "Zoom Periscópio, Design Premium.",
+      image: "/images/05.png",
+    },
+    {
+      name: "iPad Pro",
+      description: "Chip M4, Tela OLED.",
+      image: "/images/06.png",
+    },
+    {
+      name: "Apple Watch Ultra",
+      description: "Para os aventureiros.",
+      image: "/images/07.png",
     },
   ]
 
   const whatsappAdriano = "https://api.whatsapp.com/send?phone=5575998885439&text="
 
   return (
-    <section id="produtos" className="bg-black py-24 px-4 border-b border-white/20">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-6 text-balance">
+    <section id="produtos" className="bg-black py-16 px-4 border-b border-white/20">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 text-balance">
           Nossos <span className="text-[#c99420]">Produtos</span>
         </h2>
-        <p className="text-white/80 text-center mb-16 max-w-2xl mx-auto text-lg">
+        <p className="text-white/80 text-center mb-12 max-w-2xl mx-auto text-sm">
           Explore nossa coleção completa de smartphones e acessórios
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="bg-black border-2 border-white/30 rounded-lg p-8 text-white flex flex-col justify-between hover:border-[#c99420] hover:shadow-2xl hover:shadow-[#c99420]/30 hover:scale-105 transition duration-300"
-            >
-              <div>
-                <h3 className="text-3xl font-bold mb-3 text-white">{product.name}</h3>
-                <p className="text-white/70 text-base mb-6">{product.description}</p>
-              </div>
-              <CustomButton href={whatsappAdriano} target="_blank" rel="noopener noreferrer" variant="primary">
-                Compre Aqui
-              </CustomButton>
-            </div>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-6xl" // Aumentei a largura máxima do carrossel
+        >
+          <CarouselContent>
+            {products.map((product, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
+                  <Card className="bg-[#1a1a1a] border-white/10 hover:border-[#c99420] transition-all duration-300 h-full">
+                    <CardContent className="flex flex-col items-center justify-between p-6 h-[550px]"> {/* Aumentei a altura do card */}
+                      <div className="relative w-full flex-1 flex items-center justify-center mb-6 overflow-hidden">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          // Aumentei drasticamente a altura da imagem (max-h-80 = 320px)
+                          className="max-h-80 w-auto object-contain drop-shadow-md hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      
+                      <div className="text-center mb-6">
+                        <h3 className="text-2xl font-bold text-white mb-2">{product.name}</h3>
+                        <p className="text-white/60 text-base line-clamp-2">{product.description}</p>
+                      </div>
+
+                      <div className="scale-110"> {/* Botão um pouco maior também */}
+                        <CustomButton
+                          href={whatsappAdriano}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          variant="primary"
+                        >
+                          Compre Agora
+                        </CustomButton>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-black bg-[#c99420] border-none hover:bg-[#c99420]/80 hidden md:flex w-12 h-12" /> {/* Setas maiores */}
+          <CarouselNext className="text-black bg-[#c99420] border-none hover:bg-[#c99420]/80 hidden md:flex w-12 h-12" />
+        </Carousel>
       </div>
     </section>
   )
