@@ -24,7 +24,7 @@ export default function Location() {
                 <div>
                   <p className="font-semibold text-sm">Endereço</p>
                   <p className="text-white/70 text-xs">Praça Érico damacena, Ao lado de Neném do Bolo - Sítio do Quinto/BA</p>
-                  <p className="text-white/70 text-xs">Av. Helvecio Pereira de Santana, em frente a Feira Livre - Heliópolis/BA</p>
+                  <p className="text-white/70 text-xs">Av. 07 de Setembro, em frente a Feira Livre - Heliópolis/BA</p>
 
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function Location() {
               <p className="text-white/70 text-xs mt-1">
                 Segunda - Sexta - Todas as Lojas: 08h - 18h
                 <br />
-                Sábado Helípolis: 8h - 18h
+                Sábado Helípolis: 8h - 16h
                 <br></br>
                 Sítio do Quinto (Sábado): Fechado
                 <br />
