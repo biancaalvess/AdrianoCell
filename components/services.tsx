@@ -6,23 +6,23 @@ export default function Services() {
   const services = [
     {
       icon: Smartphone,
-      title: "Produtos Originais",
-      description: "Todos os nossos produtos são 100% originais e com garantia",
+      title: "E o meu antigo celular?",
+      description: "Aceitamos seu usado como parte do pagamento!",
     },
     {
       icon: Truck,
-      title: "Entrega Rápida",
-      description: "Entregas rápidas e seguras para toda região",
+      title: "Posso comprar online?",
+      description: "Sim! Entregas rápidas e seguras para toda região, consulte seu endereço",
     },
     {
       icon: Shield,
-      title: "Garantia Total",
-      description: "Garantia de satisfação em todos os produtos",
+      title: "Produtos Novos e SemiNovos",
+      description: "SemiNovo com 3 meses de garantia e Novo com 1 ano de garantia",
     },
     {
       icon: Headset,
       title: "Suporte Completo",
-      description: "Atendimento ao cliente 24/7 via WhatsApp",
+      description: "Atendimento ao cliente via WhatsApp",
     },
   ]
 

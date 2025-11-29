@@ -23,7 +23,9 @@ export default function Location() {
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-1 text-white/60" />
                 <div>
                   <p className="font-semibold text-sm">Endereço</p>
-                  <p className="text-white/70 text-xs">Rua Exemplo, 123 - Centro</p>
+                  <p className="text-white/70 text-xs">Praça Érico damacena, Ao lado de Neném do Bolo - Sítio do Quinto/BA</p>
+                  <p className="text-white/70 text-xs">Av. Helvecio Pereira de Santana, em frente a Feira Livre - Heliópolis/BA</p>
+
                 </div>
               </div>
               <div className="flex items-start gap-2">
@@ -51,7 +53,7 @@ export default function Location() {
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-1 text-white/60" />
                 <div>
                   <p className="font-semibold text-sm">Endereço</p>
-                  <p className="text-white/70 text-xs">Rua Exemplo, 456 - Centro</p>
+                  <p className="text-white/70 text-xs">Av. Helvecio Pereira de Santana, ao lado da Lotérica - Heliópolis/BA</p>
                 </div>
               </div>
               <div className="flex items-start gap-2">
@@ -78,11 +80,15 @@ export default function Location() {
             <div>
               <h3 className="font-bold text-sm text-white/80">Horário de Funcionamento</h3>
               <p className="text-white/70 text-xs mt-1">
-                Segunda - Sexta: 09h - 18h
+                Segunda - Sexta - Todas as Lojas: 08h - 18h
                 <br />
-                Sábado: 09h - 14h
+                Sábado Helípolis: 8h - 18h
+                <br></br>
+                Sítio do Quinto (Sábado): Fechado
                 <br />
-                Domingo: Fechado
+                Domingo Sítio do Quinto: 08h - 15h
+                <br></br>
+                Heliópolis (Domingo): Fechado
               </p>
             </div>
           </div>
