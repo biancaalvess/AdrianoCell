@@ -86,14 +86,6 @@ export default function Location() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-2 mt-3">
-            <CustomButton href={whatsappAdriano} target="_blank" rel="noopener noreferrer" variant="primary">
-              WhatsApp Adriano
-            </CustomButton>
-            <CustomButton href={whatsappUPCell} target="_blank" rel="noopener noreferrer" variant="primary">
-              WhatsApp UPCell
-            </CustomButton>
-          </div>
         </div>
       </div>
     </section>
